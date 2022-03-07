@@ -4,14 +4,13 @@ const moviePosterUrl = document.querySelector('.userInputPosterUrl');
 const btn = document.querySelector('.button');
 const movieTitleToDisplay = document.querySelector('.favoriteMovieTitle');
 
-window.onload = ()=> {
-    let titleInStorage = localStorage.getItem('title');
-    let imageUrlInStorage = localStorage.getItem('imageUrl');
+
+let titleInStorage = localStorage.getItem('title');
+let imageUrlInStorage = localStorage.getItem('imageUrl');
     
-    if(titleInStorage && imageUrlInStorage) {
-        movieTitleToDisplay.textContent = titleInStorage;
-        container.style.backgroundImage = `url('${imageUrlInStorage}')`;
-    }
+if(titleInStorage && imageUrlInStorage) {
+    movieTitleToDisplay.textContent = titleInStorage;
+    container.style.backgroundImage = `url('${imageUrlInStorage}')`;
 }
 
 
